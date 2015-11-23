@@ -17,14 +17,18 @@ public abstract class Message {
      */
     public String getWelcomeMessage() {
         StringBuilder message = new StringBuilder();
-        message.append(ResourceBundle.getBundle(MESSAGES_FILE, Locale.getDefault()).getString(getRecipient()))
+        message.append(ResourceBundle.getBundle(MESSAGES_FILE, Locale.getDefault()).getString(getDayTime()))
                 .append(", ")
                 .append(ResourceBundle.getBundle(MESSAGES_FILE, Locale.getDefault()).getString(RECIPIENT))
                 .append(ResourceBundle.getBundle(MESSAGES_FILE, Locale.getDefault()).getString(END_SYMBOL));
         return message.toString();
     }
 
-    public abstract String getRecipient();
+    /**
+     * @return day part
+     */
+    public abstract String getDayTime();
+
     public void printMessage() {
         System.out.println(getWelcomeMessage());
     }
