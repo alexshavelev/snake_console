@@ -5,5 +5,5 @@
     #mvn compile
     #mvn package
     #cd ./target
-    #java -jar welcomeProject-1.0-SNAPSHOT.jar
+    #java -jar snakeConsole-1.0-SNAPSHOT.jar
 # snake_console
