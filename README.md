@@ -1,4 +1,4 @@
-# welcomeProj
+# Game! Snake! Console!
 
 #after clone project
     #cd /path/to/project
